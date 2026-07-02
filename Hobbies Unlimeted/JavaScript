@@ -1,0 +1,63 @@
+
+const hobbiesData = [
+    {
+        "id": 1,
+        "nome": "Esportes",
+        "imagem": "10 Ways to Save Money on Sporting Equipment for Your Kids.jpeg",
+        "destaqueCarrossel": true,
+        "lugares_bh": "Lagoa da Pampulha (Corrida/Ciclismo), Parque das Mangabeiras, CTE-UFMG.",
+        "profissionais": "Assessoria Esportes BH, Treinadores de corrida na Orla.",
+        "site": "portalbelohorizonte.com.br",
+        "dica": "A Orla da Pampulha fecha parte das pistas aos domingos de manhã para lazer."
+    },
+    {
+        "id": 2,
+        "nome": "Leitura",
+        "imagem": "460f1b7f3aad5ec7e49ad2781d5ccfc8.jpg",
+        "destaqueCarrossel": true,
+        "lugares_bh": "Biblioteca Pública Estadual de MG (Praça da Liberdade), Café do CCBB, Livraria Quixote (Savassi).",
+        "profissionais": "Mediadores de Clubes de Leitura da Savassi.",
+        "site": "biblioteca.mg.gov.br",
+        "dica": "O CCBB possui sofás confortáveis e entrada gratuita para leitura no pátio interno."
+    },
+    {
+        "id": 3,
+        "nome": "Desenho",
+        "imagem": "Draw Your Way to Calm_ Stress Relief Drawing Ideas!.jpeg",
+        "destaqueCarrossel": true,
+        "lugares_bh": "Praça do Papa (Desenho de observação da cidade), Mirante das Mangabeiras.",
+        "profissionais": "Casa dos Quadrinhos (Escola Técnica de Artes Visuais na Av. João Pinheiro).",
+        "site": "casadosquadrinhos.com.br",
+        "dica": "Leve sua prancheta para a Praça da Liberdade no fim de tarde, a iluminação é fantástica."
+    },
+    {
+        "id": 4,
+        "nome": "Instrumento Musical",
+        "imagem": "artes dos instrumentos_.jpeg",
+        "destaqueCarrossel": false,
+        "lugares_bh": "Fundação de Educação Artística - FEA (Rua Gonçalves Dias), Escola de Música da UEMG.",
+        "profissionais": "Professores particulares e oficinas da FEA BH.",
+        "site": "feabh.org.br",
+        "dica": "A FEA frequentemente oferece cursos livres para iniciantes e concertos didáticos de baixo custo."
+    },
+    {
+        "id": 5,
+        "nome": "Culinária",
+        "imagem": "Sopa de Pollo Canaria_ Sabor Tradicional en tu Mesa.jpeg",
+        "destaqueCarrossel": false,
+        "lugares_bh": "Mercado Central de BH (oficinas esporádicas), Mercado Novo (foco em gastronomia de raiz).",
+        "profissionais": "Chef Sabrina Gomide (Experimente Cozinha Foodlab no bairro Santa Lúcia), Cursos SENAC MG.",
+        "site": "experimentecozinha.com.br",
+        "dica": "O Experimente Cozinha realiza módulos práticos no estilo 'mão na massa' perfeitos para amadores."
+    },
+    {
+        "id": 6,
+        "nome": "Organização & Produtividade",
+        "imagem": "download (3).jpeg",
+        "destaqueCarrossel": false,
+        "lugares_bh": "Espaços de Coworking locais (WeWork Savassi, Impact Hub BH) para estruturar rotinas.",
+        "profissionais": "Personal Organizers associados à ANPOP atuantes na região metropolitana.",
+        "site": "anpop.com.br",
+        "dica": "Utilizar planners físicos comprados em papelarias tradicionais da Savassi ajuda a desconectar das telas."
+    }
+];
