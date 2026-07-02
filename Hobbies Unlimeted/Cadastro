@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Hobbie Unlimited</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(180deg, #f7fbf8 0%, #eef6f0 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .cadastro-page {
+            width: 100%;
+            max-width: 1100px;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 24px;
+            align-items: stretch;
+        }
+
+        .cadastro-hero,
+        .cadastro-card {
+            border-radius: 28px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .cadastro-hero {
+            background: linear-gradient(135deg, #198754, #20c997);
+            color: #fff;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+
+        .cadastro-hero h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(2rem, 4vw, 3.6rem);
+            margin-bottom: 14px;
+        }
+
+        .cadastro-hero p {
+            font-family: 'Lato', sans-serif;
+            font-size: 1.05rem;
+            max-width: 540px;
+            opacity: 0.95;
+        }
+
+        .cadastro-badges {
+            margin-top: 26px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .cadastro-badges span {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 8px 14px;
+            border-radius: 999px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        .cadastro-card {
+            background: rgba(255,255,255,0.86);
+            backdrop-filter: blur(8px);
+            padding: 34px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .cadastro-card h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #198754;
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        .cadastro-card .sub {
+            font-family: 'Lato', sans-serif;
+            color: #6c757d;
+            margin-bottom: 24px;
+        }
+
+        .cadastro-card label {
+            font-family: 'Poppins', sans-serif;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+
+        .cadastro-card input {
+            font-family: 'Lato', sans-serif;
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+        }
+
+        .btn-entrar {
+            background-color: #198754;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-entrar:hover {
+            background-color: #157347;
+        }
+
+        .acao-secundaria {
+            margin-top: 14px;
+            text-align: center;
+        }
+
+        .acao-secundaria a {
+            color: #198754;
+            text-decoration: underline;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        @media (max-width: 900px) {
+            .cadastro-page {
+                grid-template-columns: 1fr;
+            }
+
+            .cadastro-hero,
+            .cadastro-card {
+                padding: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="cadastro-page">
+        <section class="cadastro-hero">
+            <h1>Hobbie Unlimited</h1>
+            <p>Crie seu acesso antes de entrar na página principal. Cadastre-se para começar a explorar hobbies, favoritos e conteúdos personalizados.</p>
+
+            <div class="cadastro-badges">
+                <span>Cadastro rápido</span>
+                <span>Visual moderno</span>
+                <span>Mobile friendly</span>
+            </div>
+        </section>
+
+        <section class="cadastro-card">
+            <h2>Cadastro de Usuário</h2>
+            <p class="sub">Preencha seus dados para continuar para o site.</p>
+
+            <form id="form-cadastro-inicial">
+                <div class="form-group">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" placeholder="Seu nome completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="usuario">Username</label>
+                    <input type="text" id="usuario" placeholder="Escolha um usuário" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="senha">Password</label>
+                    <input type="password" id="senha" placeholder="Crie sua senha" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmar-senha">Confirmar senha</label>
+                    <input type="password" id="confirmar-senha" placeholder="Repita sua senha" required>
+                </div>
+
+                <p id="erro-cadastro-inicial" style="color: red; font-size: 0.9rem; display: none; margin-top: 10px;"></p>
+                <p id="sucesso-cadastro-inicial" style="color: green; font-size: 0.9rem; display: none; margin-top: 10px;"></p>
+
+                <button type="submit" class="btn-entrar" style="width: 100%; margin-top: 15px;">Criar conta</button>
+
+                <div class="acao-secundaria">
+                    <a href="site hobbies.html#login">Já tenho conta / entrar no site</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('form-cadastro-inicial').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const username = document.getElementById('usuario').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const senha = document.getElementById('senha').value.trim();
+            const confirmar = document.getElementById('confirmar-senha').value.trim();
+            
+            const erro = document.getElementById('erro-cadastro-inicial');
+            const sucesso = document.getElementById('sucesso-cadastro-inicial');
+
+            erro.style.display = 'none';
+            sucesso.style.display = 'none';
+
+            if (senha !== confirmar) {
+                erro.textContent = 'As senhas não conferem.';
+                erro.style.display = 'block';
+                return;
+            }
+
+            let listaUsuarios = JSON.parse(localStorage.getItem('usuariosCadastrados')) || [
+                { username: "admin", password: "1234" }
+            ];
+
+            const usuarioExiste = listaUsuarios.find(u => u.username.toLowerCase() === username.toLowerCase());
+            if (usuarioExiste) {
+                erro.textContent = 'Este nome de usuário já está em uso.';
+                erro.style.display = 'block';
+                return;
+            }
+
+            listaUsuarios.push({ username: username, password: senha, email: email });
+            localStorage.setItem('usuariosCadastrados', JSON.stringify(listaUsuarios));
+
+            // Loga automaticamente o usuário ativo
+            localStorage.setItem('usuarioLogado', username);
+
+            sucesso.textContent = 'Cadastro realizado com sucesso! Redirecionando...';
+            sucesso.style.display = 'block';
+
+            setTimeout(() => {
+                window.location.href = 'site hobbies.html';
+            }, 1200);
+        });
+    </script>
+
+</body>
+</html>
